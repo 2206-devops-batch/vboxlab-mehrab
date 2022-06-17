@@ -1,5 +1,6 @@
 ---
-- hosts: local
+- hosts: localhost
+  connection: local
   tasks:
   - name: "Install required software"
     apt:
@@ -8,9 +9,9 @@
     become: true
     vars:
       packages: Setting up dev environment
-      - python3-pip
-      - docker
-      - docker-compose
+        - python3-pip
+        - docker
+        - docker-compose
   - name: "Starting Docker"
     become: true
     service:
