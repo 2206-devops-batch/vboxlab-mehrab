@@ -21,7 +21,7 @@
   - name: "Pull git repo"
     git:
       repo: git@github.com:mehrabrahman/embedded-tomcat-spring.git
-      dest: /tmp
+      dest: /tmp/embedded-tomcat-spring/
       version: master
       accept_hostkey: yes
       
